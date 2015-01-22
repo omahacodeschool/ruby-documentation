@@ -45,25 +45,24 @@ The format is pretty simple, and you'll include this for every custom method you
 - A quick description of the method (in a sentence).
 - A list of parameters, one per line. Each parameter should include the parameter name, the expected parameter type, and a quick description of what this value represents.
 - The return value(s) and their type(s). If there is special significance to the set of possible return values, you should write that out.
-- Any state changes, i.e. any changes this method makes to the attributes of either the object it belongs to or objects that get passed to it.
-  - Rule of thumb: If a variable with an `@` before its name gets changed by this method or by a method called by this method, that's probably a state change.
+- Any state changes, i.e. any changes this method makes to the attributes of the object to which it belongs, or to any other objects it might interact with.
 
 ```ruby
 # Public: #play
 # Starts and then plays the game with the provided players.
 #
 # Parameters:
-# player1 - Player: One of the players.
-# player2 - Player: Another player.
+# + player1 - Player: One of the players.
+# + player2 - Player: Another player.
 #
 # Returns:
 # Player: Whoever was victorious.
 #
 # State Changes:
-# Modifies Player@move and Player@score for both player objects.
+# Sets @winning_player and @losing_player.
 ```
 
-Without looking at the method itself, we can tell that the above method plays our game, requires two parameters, and returns the victorious player. We can also tell what `Player` class attributes will be affected by our method. We don't need to worry about which `Player` object gets returned... we just have to know that a `Player` object will be returned.
+Without looking at the method itself, we can tell that the above method plays our game, requires two parameters, and returns the victorious player. We also know which attributes of the `Game` class will be modified. We don't need to worry about which `Player` object gets returned... we just have to know that a `Player` object will be returned.
 
 Here's another example with parameters and some different return values:
 
@@ -72,8 +71,8 @@ Here's another example with parameters and some different return values:
 # Compares two moves to see which is victorious.
 #
 # Params:
-# move1 - String: The first move.
-# move2 - String: The second move.
+# + move1 - String: The first move.
+# + move2 - String: The second move.
 #
 # Returns:
 # Integer: 0 if the moves tie or if there is an error.
