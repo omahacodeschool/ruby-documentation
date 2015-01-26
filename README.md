@@ -52,8 +52,10 @@ The format is pretty simple, and you'll include this for every custom method you
 # Starts and then plays the game with the provided players.
 #
 # Parameters:
-# + player1 - Player: One of the players.
-# + player2 - Player: Another player.
+# player1 - Player: One of the players.
+# player2 - Player: Another player.
+# player3 - Player: This isn't a real parameter for this method, but it's here to demonstrate
+#           how you would type a very long description of a parameter.
 #
 # Returns:
 # Player: Whoever was victorious.
@@ -71,8 +73,8 @@ Here's another example with parameters and some different return values:
 # Compares two moves to see which is victorious.
 #
 # Params:
-# + move1 - String: The first move.
-# + move2 - String: The second move.
+# move1 - String: The first move.
+# move2 - String: The second move.
 #
 # Returns:
 # Integer: 0 if the moves tie or if there is an error.
