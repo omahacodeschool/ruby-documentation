@@ -21,7 +21,7 @@ Once the docs are done, you can write your class. It is usually best practice to
 # @breed  - String: the dog's breed.
 # @age    - Integer: the dog's age in months. Must be positive.
 # @weight - Integer: the dog's weight in pounds. Must be positive.
-# @good  - Boolean: whether this dog is a good dog (true) or not (false).
+# @good   - Boolean: whether this dog is a good dog (true) or not (false).
 #
 # Public Interface:
 # #bark
