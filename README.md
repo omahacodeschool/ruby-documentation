@@ -16,14 +16,14 @@ Once the docs are done, you can write your class. It is usually best practice to
 #
 # Models our canine pals.
 #
-# Data Members:
+# Attributes:
 # @name   - String: the dog's name.
 # @breed  - String: the dog's breed.
 # @age    - Integer: the dog's age in months. Must be positive.
 # @weight - Integer: the dog's weight in pounds. Must be positive.
 # @good   - Boolean: whether this dog is a good dog (true) or not (false).
 #
-# Public Interface:
+# Public Methods:
 # #bark
 # #wag
 # #drool
