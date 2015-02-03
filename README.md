@@ -86,3 +86,24 @@ Here's another example with parameters and some different return values:
 ```
 
 This one takes two parameters (`move1` and `move2`, both Strings), and has some special return values, in that it will only ever return -1, 0, or 1 (Integer values). We don't have any idea how this method actually turns two moves into a -1, 0, or 1, but that's the whole point of methods -- the less we have to know about *how* each part of our program does its job, the more thought-space we have for other things.
+
+### Example using an options hash:
+
+```ruby
+# Public: #play
+# Starts and then plays the game with the provided players.
+#
+# Parameters:
+# options - Hash
+#           - player1 - Player: One of the players.
+#           - player2 - Player: Another player.
+#           - player3 - Player: This isn't a real parameter for this method, but
+#                       it's here to demonstrate how you would type a very long
+#                       description of a parameter.
+#
+# Returns:
+# Player: Whoever was victorious.
+#
+# State Changes:
+# Sets @winning_player and @losing_player.
+```
